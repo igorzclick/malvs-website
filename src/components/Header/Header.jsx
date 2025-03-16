@@ -1,7 +1,36 @@
-import './header.sass'
-import Navigation from './Navigation'
+/* eslint-disable react-hooks/exhaustive-deps */
+// eslint-disable-next-line no-unused-vars
+import React, { useState, useEffect } from "react";
+import './header.sass';
+import Navigation from './Navigation';
+import Scroll from "./Scroll";
 
 const Header = () => {
+
+    const words = ["IDENTIDADE.", "INOVAÇÃO.", "INFLUÊNCIA.", "AUTORIDADE.", "RELEVÂNCIA."];
+    const [index, setIndex] = useState(0);
+    const [text, setText] = useState("");
+    const [isDeleting, setIsDeleting] = useState(false);
+
+    useEffect(() => {
+        let timeout;
+        if (!isDeleting && text.length < words[index].length) {
+            timeout = setTimeout(() => {
+                setText(words[index].substring(0, text.length + 1));
+            }, 200);
+        } else if (isDeleting && text.length > 0) {
+            timeout = setTimeout(() => {
+                setText(words[index].substring(0, text.length - 1));
+            }, 100);
+        } else if (!isDeleting && text.length === words[index].length) {
+            timeout = setTimeout(() => setIsDeleting(true), 1000);
+        } else if (isDeleting && text.length === 0) {
+            setIsDeleting(false);
+            setIndex((prevIndex) => (prevIndex + 1) % words.length);
+        }
+        return () => clearTimeout(timeout);
+    }, [text, isDeleting, index, words]);
+
   return (
     <header className='header-banner'>
         <nav>
@@ -10,29 +39,28 @@ const Header = () => {
         <div className="banner" id='home'>
             <div className="banner-container container">
                 <div className="banner-texts">
-                    <h1 className="banner-title">
-                        <span>Providentia Consultoria</span>
-                    </h1>
-                    <h2 className='banner-subtitle' aria-label='defenda o que é seu, fortaleça sua marca e proteja seu futuro hoje!'>
-                        <span>Defenda&nbsp;</span>
-                        <span>o que&nbsp;</span>
-                        <span>é&nbsp;</span>
-                        <span>seu,</span> <br />
-                        <span>fortaleça&nbsp;</span>
-                        <span>sua&nbsp;</span>
-                        <span>marca&nbsp;</span>
-                        <span>e</span> <br />
-                        <span>proteja&nbsp;</span>
-                        <span>seu&nbsp;</span>
-                        <span>futuro&nbsp;</span>
-                        <span>hoje!</span>
-                    </h2>
+                     <div className=" animate-blink">
+                        <h2 className="cta" >
+                            <span>SOMOS RESPONSÁVEIS PELA SUA </span> 
+                            <span className="animation-text">
+                                {text}
+                            </span> 
+                        </h2>
+                    </div>
+                    <p className='banner-subtitle'>
+                        Descubra estratégias inovadoras que transformam sua presença online. 
+                        Fale conosco e agende sua consultoria gratuita para alavancar o crescimento da sua marca no mundo digital!
+                    </p>
                 </div>
                 <div className="button">
-                    <a aria-label="chat whatsapp"  href="https://wa.me/5511948872447" className="button-link" target='_blank' rel='noreferrer'>
-                            REGISTRE JÁ 
+                    <a aria-label="chat whatsapp" href="https://wa.me/5511" className="button-link" target='_blank' rel='noreferrer'>
+                            VENHA PARA O DIGITAL!  
                     </a>
                 </div>
+                
+                <div className="home-img"></div>
+
+                <Scroll/>
             </div>
         </div>
     </header>

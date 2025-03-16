@@ -18,9 +18,12 @@ function Header () {
   return (
     <div className="header">
         <nav className="nav container">
-            <a href="index.html" className="nav-logo"> 
-                <img src={Logo} alt="logo providentia"/>
-            </a>
+            <h1 className="logo" aria-label='Malvs Agência Digital'>
+                <a href="index.html" className="nav-logo"> 
+                    <img src={Logo} alt="logo providentia"/>
+                </a>
+            </h1>
+            
             <div className={Toggle ? "nav-menu show-menu" : "nav-menu"}>
                 <ul className="nav-list grid">
                     <li className="nav-item">
@@ -42,11 +45,10 @@ function Header () {
                     </li>
 
                     <li className="nav-item">
-                        <a aria-label="serviços" href="#services" onClick={() => setActiveNav("#services")} className={activeNav === "#services" ? "nav-link active-link" : "nav-link"}>
-                            <i className="bx bx-copyright nav-icon" alt="serviços"></i> Cases
+                        <a aria-label="cases" href="#cases" onClick={() => setActiveNav("#cases")} className={activeNav === "#cases" ? "nav-link active-link" : "nav-link"}>
+                            <i className="bx bx-copyright nav-icon" alt="cases"></i> Cases
                         </a>
                     </li>
-
 
                     <li className="nav-item">
                         <a aria-label="chat whatsapp"  href="#contact" className="nav-link" >

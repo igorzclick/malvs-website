@@ -1,4 +1,117 @@
 @use '../../styles/variables'
 
+.banner
+    color: variables.$white
+    height: 100vh
+    background: linear-gradient(-30deg, variables.$red, variables.$black, variables.$we-pink)
+    background-size: 400% 400%
+    animation: gradient 12s ease infinite
+    ovel
 
+@keyframes gradient
+    0%
+        background-position: 0% 50%
 
+    50%
+        background-position: 80% 50%
+
+    100%
+        background-position: 0% 50%
+
+.banner-texts
+    padding-top: 34vh
+
+.cta
+    font-size: variables.$cta-font
+    color: variables.$white
+    font-weight: variables.$font-weight-bold
+    width: 47%
+
+.banner-subtitle
+    font-size: variables.$inclusive
+    font-weight: variables.$font-weight-normal
+    width: 47%
+    margin-top: variables.$m-0-5
+
+.animation-text
+    color: variables.$red
+
+.banner-container
+    position: relative
+
+.button
+    margin-top: variables.$m-1
+    display: inline-block
+    padding: .75rem 2.5rem
+    transition: all .3s
+    position: relative
+    overflow: hidden
+    z-index: 1
+    width: 47%
+    text-align: center
+    font-family: variables.$inclusive
+
+    &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: variables.$red
+        z-index: -2
+    &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 0%
+        height: 100%
+        background-color: darken(variables.$red, 15%)
+        transition: all .3s
+        z-index: -1
+    &:hover
+        color: #000
+        &:before
+            width: 100%
+
+.button-link
+    font-size: variables.$text-font
+    text-transform: uppercase
+    letter-spacing: .15rem
+    font-weight: variables.$font-weight-normal
+    color: variables.$white
+
+/*image*/
+.home-img
+    background: url(../../assets/image-header2-sf.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    justify-content: center
+    order: 1
+    width: 50%
+    height: 100%
+    position: absolute
+    left: 50%
+    top: 25%
+
+/*scroll animation*/
+.home-scroll
+    margin: 8% 50%
+    position: absolute
+
+.wheel
+    animation: scroll 2s infinite
+
+/*scroll animation*/
+@keyframes scroll
+    0%
+        transform: translateY(0)
+
+    30%
+        transform: translateY(3.75rem)
+
+.home-scroll-arrow
+    font-size: 1.25rem
+    color: variables.$red
