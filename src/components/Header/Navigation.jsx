@@ -20,7 +20,7 @@ function Header () {
         <nav className="nav container">
             <h1 className="logo" aria-label='Malvs Agência Digital'>
                 <a href="index.html" className="nav-logo"> 
-                    <img src={Logo} alt="logo providentia"/>
+                    <img src={Logo} alt="Logo Malvs"/>
                 </a>
             </h1>
             
