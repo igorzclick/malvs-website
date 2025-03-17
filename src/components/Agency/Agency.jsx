@@ -15,17 +15,21 @@ const Agency = () => {
             <div className="agency-cards grid">
                 <div className="agency-card">
                     <i className='bx bx-group agency-icon'></i>
-                    <h3 className="agency-title">Quem Somos</h3>
-                    <p className="agency-description">
-                        
-                    </p>
+                   
                 </div>
                 <div className="agency-card">
                     <i className='bx bx-award agency-icon'></i>
-                    <h3 className="agency-title">Missão</h3>
+                    <h3 className="agency-title">Há mais de 5 anos inovando o digital</h3>
                     <p className="agency-description">
-                        Nossa missão é ajudar empresas a crescerem no mundo digital, através de estratégias inovadoras e personalizadas.
+                    Nossa agência é especializada em marketing para<br>
+                    </br> empresas e órgãos públicos, unindo dados, criatividade e<br>
+                    </br> experiência para resultados consistentes. Oferecemos<br>
+                    </br> planejamento de campanhas publicitárias,publicidade<br>
+                    </br>  institucional e governamental, além de estratégias de<br>
+                    </br> marketing digital, como tráfego pago, inbound marketing e criação de sites e landing pages otimizados. 
                     </p>
+                    
+                     
                 </div>
 
         </div>  
