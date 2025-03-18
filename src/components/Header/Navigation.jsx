@@ -33,20 +33,20 @@ function Header () {
                     </li>
 
                     <li className="nav-item">
-                        <a aria-label="quem somos" href="#about" onClick={() => setActiveNav("#about")} className={activeNav === "#about" ? "nav-link active-link" : "nav-link"}>
-                            <i className="bx bx-fingerprint nav-icon" alt="quem somos"></i> Agência
+                        <a aria-label="quem somos" href="#agency" onClick={() => setActiveNav("#agency")} className={activeNav === "#agency" ? "nav-link active-link" : "nav-link"}>
+                            <i className='bx bx-code nav-icon'></i> Agência
                         </a>
                     </li>
 
                     <li className="nav-item">
                         <a aria-label="serviços" href="#services" onClick={() => setActiveNav("#services")} className={activeNav === "#services" ? "nav-link active-link" : "nav-link"}>
-                            <i className="bx bx-copyright nav-icon" alt="serviços"></i> Serviços
+                            <i className="bx bx-trending-up nav-icon" alt="serviços"></i> Serviços
                         </a>
                     </li>
 
                     <li className="nav-item">
                         <a aria-label="cases" href="#cases" onClick={() => setActiveNav("#cases")} className={activeNav === "#cases" ? "nav-link active-link" : "nav-link"}>
-                            <i className="bx bx-copyright nav-icon" alt="cases"></i> Cases
+                            <i className="bx bxs-layer nav-icon" alt="cases"></i> Cases
                         </a>
                     </li>
 

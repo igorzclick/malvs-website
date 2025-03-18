@@ -1,12 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import './header.sass';
 import Navigation from './Navigation';
 import Scroll from "./Scroll";
 
 const Header = () => {
-
+   
+// animação de escrita
     const words = ["IDENTIDADE.", "INOVAÇÃO.", "INFLUÊNCIA.", "AUTORIDADE.", "RELEVÂNCIA."];
     const [index, setIndex] = useState(0);
     const [text, setText] = useState("");
@@ -31,9 +32,9 @@ const Header = () => {
         return () => clearTimeout(timeout);
     }, [text, isDeleting, index, words]);
 
-  return (
-    <header className='header-banner'>
-        <nav>
+    return (
+    <header className='header-banner'>     
+        <nav> 
             <Navigation />
         </nav>
         <div className="banner" id='home'>

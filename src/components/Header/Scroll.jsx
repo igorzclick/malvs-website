@@ -3,7 +3,7 @@
 const Scroll = () => {
   return (
     <div className="home-scroll">
-        <a href="#about" className="home-scroll-button button-flex">
+        <a href="#agency" className="home-scroll-button button-flex">
             <svg
                 width="40px"
                 height="40px"
