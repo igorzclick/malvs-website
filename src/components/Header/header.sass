@@ -1,5 +1,6 @@
 @use '../../styles/variables'
 
+// animação escrita
 .banner
     color: variables.$white
     height: 100vh
@@ -92,7 +93,18 @@
     position: absolute
     left: 40%
     top: 25%
+    animation: move 3s infinite alternate ease-in-out
 
+.home-img img
+    animation: glow 1.5s infinite alternate ease-in-out
+
+    @keyframes move
+        0% 
+            transform: translateY(0) rotate(0deg)
+
+        100% 
+            transform: translateY(-10px) rotate(2deg)
+    
 /*scroll animation*/
 .home-scroll
     margin: 22% 50%
