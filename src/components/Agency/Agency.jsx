@@ -1,7 +1,26 @@
 import "./agency.sass";
 import Counter from "./Counter";
+import {register} from 'swiper/element/bundle'
+register();
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Swiper } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
+import img1 from '../../assets/imagem-1.jpg';
+import img2 from '../../assets/imagem-2.jpg';
+import img3 from '../../assets/imagem-3.jpg';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 const Agency = () => {
+  const data = [
+    { id: 1, image: img1 },
+    { id: 2, image: img2 },
+    { id: 3, image: img3 }
+  ];
+   
   return (
     <div className="agency" id="agency">
       <div className="agency-container container">
@@ -11,7 +30,33 @@ const Agency = () => {
         </div>
         {/* cards */}
         <div className="agency-cards grid">
-          <div className="agency-card"></div>
+          <div className="agency-card">{/* imagens */}
+            <Swiper spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="Swiper"
+      >
+                {data.map((item) => (
+                  <SwiperSlide className="swiper2" key={item.id}>
+                    <img 
+                    src={item.image} 
+                    alt="Slider" 
+                    className="slide-item"/>
+
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+            
+
+          </div>
           <div className="agency-card">
             <h3 className="agency-title">
               Há mais de 5 anos inovando o digital
