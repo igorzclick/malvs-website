@@ -8,9 +8,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
-import img1 from '../../assets/imagem-1.jpg';
-import img2 from '../../assets/imagem-2.jpg';
-import img3 from '../../assets/imagem-3.jpg';
+import img1 from '../../assets/customer-pana.png';
+import img2 from '../../assets/mobile-pana.png';
+import img3 from '../../assets/ecommerce-pana.png';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
@@ -32,18 +32,18 @@ const Agency = () => {
         <div className="agency-cards grid">
           <div className="agency-card">{/* imagens */}
             <Swiper spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="Swiper"
-      >
+              centeredSlides={true}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="Swiper"
+            >
                 {data.map((item) => (
                   <SwiperSlide className="swiper2" key={item.id}>
                     <img 

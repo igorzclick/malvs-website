@@ -37,51 +37,19 @@ const Counter = ({ label, targetValue, }) => {
   // };
 
   return (
-    <div style={styles.counters}>
-      <div style={styles.counterContainer}>
+    <div className='counters'>
+      <div className='counter-container'>
         {/* Ícone */}
         
         {/* Contador */}
-        <h2 style={styles.counterText}>+{count}</h2>
+        <p className='counter-text'>+{count}</p>
         {/* Label */}
-        <p style={styles.label}>{label}</p>
+        <p className='label-counter'>{label}</p>
       </div>
     </div>
   );
 };
 
-const styles = {
-  counters: {
-    display: "flex",
-    flexDirection: "row",
-  },
-
-  counterContainer: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    padding: "10px",
-    width: "150px",
-    margin: "20px",
-  },
-  iconContainer: {
-    fontSize: "40px",
-    color: "#4CAF50", // Cor verde para os ícones
-    marginBottom: "10px",
-  },
-  icon: {
-    fontSize: "40px",
-  },
-  counterText: {
-    fontSize: "36px",
-    margin: "10px 0",
-    color: "#e52168",
-  },
-  label: {
-    fontSize: "16px",
-    color: "#777",
-  },
-};
 
 export default Counter;
 

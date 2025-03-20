@@ -38,7 +38,7 @@ const Header = () => {
             <Navigation />
         </nav>
         <div className="banner" id='home'>
-            <div className="banner-container container">
+            <div className="banner-container container">               
                 <div className="banner-texts">
                      <div className=" animate-blink">
                         <h2 className="cta" >
