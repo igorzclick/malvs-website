@@ -12,6 +12,7 @@ import img1 from '../../assets/customer-pana.png';
 import img2 from '../../assets/mobile-pana.png';
 import img3 from '../../assets/ecommerce-pana.png';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import AboutUs from "./AboutUs";
 
 
 const Agency = () => {
@@ -54,9 +55,8 @@ const Agency = () => {
                   </SwiperSlide>
                 ))}
             </Swiper>
-            
-
           </div>
+          {/* card2 */}
           <div className="agency-card">
             <h3 className="agency-title">
               Há mais de 5 anos inovando o digital
@@ -80,6 +80,7 @@ const Agency = () => {
           </div>
         </div>
       </div>
+      <AboutUs />
     </div>
   );
 };

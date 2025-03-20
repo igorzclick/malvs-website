@@ -1,0 +1,60 @@
+@use '../../styles/variables'
+    
+.cards
+    grid-template-columns: 6fr 6fr
+    gap: 2rem
+    
+.card
+    margin: 3rem auto
+    background: #231e39
+    color: variables.$white
+    border-radius: 5px
+    width: 100%
+    text-align: center
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75)
+
+.cover-photo
+  background: url('../../assets/bg-gradiente.png')
+  width: 100%
+  background-repeat: no-repeat
+  background-size: cover
+  border-radius: 5px 5px 0 0
+
+.profile
+  height: 15rem
+  width: 15rem
+  border-radius: 50%
+  margin: 3rem  
+  border: 1px solid variables.$red
+  padding: .2rem
+  background: variables.$red
+
+.position
+  font-family: variables.$inclusive
+  font-size: variables.$card-text
+  font-weight: 300
+  color: variables.$red
+  margin: -1rem 
+  margin-bottom: 1rem
+
+.profile-name
+  font-family: variables.$inclusive  
+  font-size: variables.$text-font
+  font-weight: bold
+  margin: 1rem
+
+.about
+  margin: 1rem
+  line-height: 21px
+
+
+.card i
+  font-size: 2rem
+  margin-bottom: 2rem
+  cursor: pointer
+  transition: .5s
+
+.card i:hover
+  color: variables.$red
+
+
