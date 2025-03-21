@@ -33,11 +33,11 @@ const Header = () => {
     }, [text, isDeleting, index, words]);
 
     return (
-    <header className='header-banner'>     
+    <header className='header-banner' id="header">     
         <nav> 
             <Navigation />
         </nav>
-        <div className="banner" id='home'>
+        <div className="banner">
             <div className="banner-container container">               
                 <div className="banner-texts">
                      <div className=" animate-blink">

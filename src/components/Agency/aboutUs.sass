@@ -2,14 +2,14 @@
     
 .cards
     grid-template-columns: 6fr 6fr
-    gap: 2rem
+    gap: 0rem
     
 .card
     margin: 3rem auto
     background: #231e39
     color: variables.$white
     border-radius: 5px
-    width: 100%
+    width: 70%
     text-align: center
     box-shadow: 0 10px 20px -10px rgba(0,0,0,.75)
 
@@ -47,7 +47,6 @@
   margin: 1rem
   line-height: 21px
 
-
 .card i
   font-size: 2rem
   margin-bottom: 2rem
@@ -57,4 +56,13 @@
 .card i:hover
   color: variables.$red
 
+// mobile
+@media screen and (max-width: 767px)
+  .cards
+    grid-template-columns: 1fr
+    gap: 0rem
 
+  .card
+    margin: 1rem auto
+    width: 100%
+   

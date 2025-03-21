@@ -11,7 +11,7 @@ import { SwiperSlide } from "swiper/react";
 import img1 from '../../assets/customer-pana.png';
 import img2 from '../../assets/mobile-pana.png';
 import img3 from '../../assets/ecommerce-pana.png';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import AboutUs from "./AboutUs";
 
 
@@ -23,7 +23,7 @@ const Agency = () => {
   ];
    
   return (
-    <div className="agency" id="agency">
+    <section className="agency" id="agency">
       <div className="agency-container container">
         <div className="agency-texts">
           <h2 className="section-title">NOSSA AGÊNCIA</h2>
@@ -38,11 +38,8 @@ const Agency = () => {
                 delay: 4000,
                 disableOnInteraction: false,
               }}
-              pagination={{
-                clickable: true,
-              }}
               navigation={true}
-              modules={[Autoplay, Pagination, Navigation]}
+              modules={[Autoplay, Navigation]}
               className="Swiper"
             >
                 {data.map((item) => (
@@ -51,7 +48,6 @@ const Agency = () => {
                     src={item.image} 
                     alt="Slider" 
                     className="slide-item"/>
-
                   </SwiperSlide>
                 ))}
             </Swiper>
@@ -81,7 +77,7 @@ const Agency = () => {
         </div>
       </div>
       <AboutUs />
-    </div>
+    </section>
   );
 };
 

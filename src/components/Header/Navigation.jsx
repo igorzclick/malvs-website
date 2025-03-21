@@ -27,13 +27,13 @@ function Header () {
             <div className={Toggle ? "nav-menu show-menu" : "nav-menu"}>
                 <ul className="nav-list grid">
                     <li className="nav-item">
-                        <a aria-label="home" href="#home" onClick={() => setActiveNav("#home")} className={activeNav === "#home" ? "nav-link active-link" : "nav-link"}>
+                        <a aria-label="home" href="#header" onClick={() => setActiveNav("#header")} className={activeNav === "#header" ? "nav-link active-link" : "nav-link"}>
                             <i className="bx bx-home-alt nav-icon" alt="home"></i> Home
                         </a>
                     </li>
 
                     <li className="nav-item">
-                        <a aria-label="quem somos" href="#agency" onClick={() => setActiveNav("#agency")} className={activeNav === "#agency" ? "nav-link active-link" : "nav-link"}>
+                        <a aria-label="agencia" href="#agency" onClick={() => setActiveNav("#agency")} className={activeNav === "#agency" ? "nav-link active-link" : "nav-link"}>
                             <i className='bx bx-code nav-icon'></i> Agência
                         </a>
                     </li>
