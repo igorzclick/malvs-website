@@ -1,0 +1,40 @@
+@use '../../styles/variables'
+    
+.agency-texts
+    color: variables.$white
+    text-align: center
+    margin-top: variables.$m-3
+    font-weight: variables.$font-weight-bold
+
+.cards-services
+    grid-template-columns: 3fr 3fr 3fr 3fr
+    gap: 1rem
+    
+.card-services  
+    margin: 1rem auto
+    background: #231e39
+    color: variables.$white
+    border-radius: 5px
+    width: 100%
+    text-align: center
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75)
+
+.card i
+  font-size: 2rem
+  margin-bottom: 2rem
+  cursor: pointer
+  transition: .5s
+
+.card i:hover
+  color: variables.$red
+
+// mobile
+@media screen and (max-width: 767px)
+  .cards
+    grid-template-columns: 1fr
+    gap: 0rem
+
+  .card
+    margin: 1rem auto
+    width: 100%
+   

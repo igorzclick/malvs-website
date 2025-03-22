@@ -3,13 +3,14 @@ import profile1 from '../../assets/alberto.png';
 
 const AboutUs = () => {
   return (
-    <div className="about-container container">
-          <div className="agency-texts">
-              <h2 className="section-title">IDEALIZAÇÃO</h2>
-              <p className="section-subtitle">CONHEÇA MAIS SOBRE OS IDEALIZADORES DA NOSSA AGÊNCIA</p>
+    <section className="about-container container">
+          <div className="section-title-position">
+              <h2 className="section-title">NOSSOS SERVIÇOS</h2>
+              <p className="section-subtitle">CONHEÇA MAIS SOBRE OS SERVIÇOS DE NOSSA AGÊNCIA</p>
           </div>
-          <div className="cards grid">
-              <div className="card">
+          <div className="cards-about grid">
+            {/* card 1 */}
+              <div className="card-about">
                   <div className="cover-photo">
                       <img className="profile" src={profile1} alt="profile" />
                   </div>
@@ -21,7 +22,7 @@ const AboutUs = () => {
                   </div>
               </div>
              {/* card 2 */}
-              <div className="card">
+              <div className="card-about">
                   <div className="cover-photo">
                       <img className="profile" src={profile1} alt="profile" />
                   </div>
@@ -33,7 +34,7 @@ const AboutUs = () => {
                   </div>
               </div>
           </div>
-    </div>
+    </section>
       
   )
 }

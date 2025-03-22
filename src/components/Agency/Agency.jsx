@@ -23,8 +23,7 @@ const Agency = () => {
   ];
    
   return (
-    <section className="agency" id="agency">
-      <div className="agency-container container">
+    <section className="agency-container container" id="agency">
         <div className="agency-texts">
           <h2 className="section-title">NOSSA AGÊNCIA</h2>
           <p className="section-subtitle">DESCUBRA MAIS SOBRE NOSSA HISTÓRIA</p>
@@ -75,7 +74,6 @@ const Agency = () => {
             </div>
           </div>
         </div>
-      </div>
       <AboutUs />
     </section>
   );

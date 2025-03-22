@@ -6,8 +6,8 @@ import Services from './components/Services/Services'
 const App = () => {
   return (
     <>
-    <Services />
     <Header />
+    <Services />
     <Agency />
 
     </>

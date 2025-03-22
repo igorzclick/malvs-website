@@ -1,10 +1,10 @@
 @use '../../styles/variables'
     
-.cards
+.cards-about
     grid-template-columns: 6fr 6fr
     gap: 0rem
     
-.card
+.card-about
     margin: 3rem auto
     background: #231e39
     color: variables.$white
@@ -53,16 +53,16 @@
   cursor: pointer
   transition: .5s
 
-.card i:hover
+.card-about i:hover
   color: variables.$red
 
 // mobile
 @media screen and (max-width: 767px)
-  .cards
+  .cards-about
     grid-template-columns: 1fr
     gap: 0rem
 
-  .card
+  .card-about
     margin: 1rem auto
     width: 100%
    
