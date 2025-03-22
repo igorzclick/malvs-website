@@ -8,7 +8,7 @@ import Scroll from "./Scroll";
 const Header = () => {
    
 // animação de escrita
-    const words = ["IDENTIDADE.", "INOVAÇÃO.", "INFLUÊNCIA.", "AUTORIDADE.", "RELEVÂNCIA."];
+    const words = ["LEADS.", "INOVAÇÃO.", "REALIDADE."];
     const [index, setIndex] = useState(0);
     const [text, setText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
@@ -42,7 +42,7 @@ const Header = () => {
                 <div className="banner-texts">
                      <div className=" animate-blink">
                         <h2 className="cta" >
-                            <span>SOMOS RESPONSÁVEIS PELA SUA </span> 
+                            <span>TRANSFORMANDO IDEIAS EM </span> 
                             <span className="animation-text">
                                 {text}
                             </span> 
