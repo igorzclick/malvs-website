@@ -5,8 +5,8 @@ const AboutUs = () => {
   return (
     <section className="about-container container">
           <div className="section-title-position">
-              <h2 className="section-title">NOSSOS SERVIÇOS</h2>
-              <p className="section-subtitle">CONHEÇA MAIS SOBRE OS SERVIÇOS DE NOSSA AGÊNCIA</p>
+              <h2 className="section-title">QUEM SOMOS NOS?</h2>
+              <p className="section-subtitle">CONHEÇA MAIS SOBRE NOSSA EQUIPE!</p>
           </div>
           <div className="cards-about grid">
             {/* card 1 */}

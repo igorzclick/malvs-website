@@ -53,7 +53,7 @@ const Header = () => {
                         Fale conosco e agende sua consultoria gratuita para alavancar o crescimento da sua marca no mundo digital!
                     </p>
                 </div>
-                <div className="button">
+                <div className="button-header">
                     <a aria-label="chat whatsapp" href="https://wa.me/5511" className="button-link" target='_blank' rel='noreferrer'>
                             VENHA PARA O DIGITAL!  
                     </a>
