@@ -1,4 +1,8 @@
 import './services.sass';
+import cardImg1 from '../../assets/codigo.png';
+import cardImg2 from '../../assets/pedir-servico.png';
+import cardImg3 from '../../assets/bot.png';
+import cardImg4 from '../../assets/paleta.png';
 
 const Services = () => {
   return (
@@ -11,21 +15,71 @@ const Services = () => {
               {/* card 1 */}
               <div className="card-services">
                   <div className="services-img">
-                      <img className="icon-services" alt="profile" />
+                      <img className="icon-services" src={cardImg1} alt="profile" />
                   </div>
                   <div className="card-services-title">
                         <span className="card-title">
-                            Desenvolvimento de Sites
+                            Sites Responsivos
                         </span>
                   </div>
                   <div className="card-services-description">
                     <p className="card-description">
                         Desenvolvimento do seu site de forma 100% adaptável para todas as 
-                        e seguindo as regras do Google para uma melhor otimização e desemepn
+                        e seguindo as regras do Google para uma melhor otimização e desempenho.
                     </p>
                   </div>
               </div>
-              
+              {/* card 2 */}
+              <div className="card-services">
+                  <div className="services-img">
+                      <img className="icon-services" src={cardImg2} alt="profile" />
+                  </div>
+                  <div className="card-services-title">
+                      <span className="card-title">
+                          Apoio Tecnológico
+                      </span>
+                  </div>
+                  <div className="card-services-description">
+                      <p className="card-description">
+                          Desenvolvimento do seu site de forma 100% adaptável para todas as
+                          e seguindo as regras do Google para uma melhor otimização e desempenho.
+                      </p>
+                  </div>
+              </div>
+              {/* card 3 */}
+              <div className="card-services">
+                  <div className="services-img">
+                      <img className="icon-services" src={cardImg3} alt="profile" />
+                  </div>
+                  <div className="card-services-title">
+                      <span className="card-title">
+                          Chatbots
+                      </span>
+                  </div>
+                  <div className="card-services-description">
+                      <p className="card-description">
+                          Desenvolvimento do seu site de forma 100% adaptável para todas as
+                          e seguindo as regras do Google para uma melhor otimização e desempenho.
+                      </p>
+                  </div>
+              </div>
+              {/* card 4 */}
+              <div className="card-services">
+                  <div className="services-img">
+                      <img className="icon-services" src={cardImg4} alt="profile" />
+                  </div>
+                  <div className="card-services-title">
+                      <span className="card-title">
+                          Branding
+                      </span>
+                  </div>
+                  <div className="card-services-description">
+                      <p className="card-description">
+                          Desenvolvimento do seu site de forma 100% adaptável para todas as
+                          e seguindo as regras do Google para uma melhor otimização e desempenho.
+                      </p>
+                  </div>
+              </div>
              </div>
              
        </section>
