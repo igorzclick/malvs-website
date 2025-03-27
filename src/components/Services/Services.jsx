@@ -81,7 +81,11 @@ const Services = () => {
                   </div>
               </div>
              </div>
-             
+          <div className="button-services">
+              <a aria-label="chat whatsapp" href="https://wa.me/5511" className="button-link" target='_blank' rel='noreferrer'>
+                  CONHEÇA NOSSOS SERVIÇOS!
+              </a>
+          </div>
        </section>
   )
 }

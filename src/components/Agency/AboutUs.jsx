@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section className="about-container container">
           <div className="section-title-position">
-              <h2 className="section-title">QUEM SOMOS NOS?</h2>
+              <h2 className="section-title about-title">QUEM SOMOS NOS?</h2>
               <p className="section-subtitle">CONHEÇA MAIS SOBRE NOSSA EQUIPE!</p>
           </div>
           <div className="cards-about grid">

@@ -25,7 +25,7 @@ const Agency = () => {
   return (
     <section className="agency-container container" id="agency">
         <div className="agency-texts">
-          <h2 className="section-title">NOSSA AGÊNCIA</h2>
+          <h2 className="section-title agency-spacing">NOSSA AGÊNCIA</h2>
           <p className="section-subtitle">DESCUBRA MAIS SOBRE NOSSA HISTÓRIA</p>
         </div>
         {/* cards */}
