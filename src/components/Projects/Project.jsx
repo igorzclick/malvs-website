@@ -18,46 +18,73 @@ const Project = () => {
           <div className="project-card-content">
             <p className="project-card-title">MB do Brasil</p>
             <p className="project-card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
+              Ao ingressar no mercado de forma repentina e sem material concreto para apresentar aos seus clientes,
+              a MB do Brasil nos procurou em busca de uma solução que à ajudasse a transmitir credibilidade e autoridade no mercado,
+              alem de uma identidade unica e marcante. Apos um alinhamento detalhado com o proprietário e uma pesquisa meticulosa de mercado,
+              em sua area de atuação, entregamos uma identidade visual moderna e impactante, que transmitiu tudo oque o proprietario buscava.
             </p>
+            <div className="project-card-button">
+              <a  href="#" target="_blank" rel="noreferrer">
+                Venha conferir o Projeto!
+              </a>
+            </div> 
           </div>
         </div>
         {/* card 2 */}
         <div className="card-project">
           <img src={img2} alt="case image" />
           <div className="project-card-content">
-            <p className="project-card-title">Card Title</p>
+            <p className="project-card-title">Grande Victoire</p>
             <p className="project-card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
+              Ao entrar no mundo das vendas online, a Grande Victoire nos procurou em busca de uma solução 
+              que à ajudasse a expandir seus negócios, pois estava enfrentando dificuldades em suas vendas,
+              pelas limitações de atuar somente com as redes sociais. Apos um alinhamento detalhado com a proprietaria,
+              conseguimos entender suas necessidades e dores, e com isso criar uma loja virtual, moderna e responsiva.
             </p>
+            <div className="project-card-button">
+              <a href="#" target="_blank" rel="noreferrer">
+                Venha conferir o Projeto!
+              </a>
+            </div> 
+
           </div>
         </div>
         {/* card 3 */}
         <div className="card-project">
           <img src={img3} alt="case image" />
           <div className="project-card-content">
-            <p className="project-card-title">Card Title</p>
+            <p className="project-card-title">Providentia Consultoria</p>
             <p className="project-card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
+             
+             Apos anos de atuação no mercado,a Providentia Consultoria nos procurou com o objetivo de realizar a criação de um site moderno e atrativo.
+             O principal intuito do proprietario era transmitir credibilidade e autoridade no mercado, 
+             com isso ter uma relevancia nos motores de busca, impulsionando assim sua credibilidade.
+             
+             </p>
+            <div className="project-card-button">
+              <a href="https://www.providentiaconsultoria.com/" target="_blank" rel="noreferrer">
+                Venha conferir o Projeto!
+              </a>
+            </div> 
           </div>
         </div>
         {/* card 1 */}
         <div className="card-project">
           <img src={img4} alt="case image" />
           <div className="project-card-content">
-            <p className="project-card-title">Card Title</p>
+            <p className="project-card-title">Espaço Regina Monteiro</p>
             <p className="project-card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
+              
+              A proprietaria do Espaço Regina Monteiro nos procurou pois enfrentava serios problemas em suas redes sociais e na sua presença digital, 
+              onde não via engajamento e não transmitia autoridade em suas redes sociais. Ao fazer uma análise cuidadosa e meticulosa em suas redes sociais,
+              conseguimos avaliar a melhor estrategia para sanar suas dores e dificuldades. 
+
             </p>
+            <div className="project-card-button">
+              <a href="#" target="_blank" rel="noreferrer">
+                Venha conferir o Projeto!
+              </a>
+            </div>  
           </div>
         </div>
       </div>

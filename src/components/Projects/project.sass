@@ -1,5 +1,11 @@
 @use '../../styles/variables'
 
+a
+ 
+  font: variables.$subtitle
+  color: variables.$white
+
+
 .cards-project
   padding: 0
   margin-top: variables.$m-2
@@ -62,3 +68,43 @@
   color: variables.$white
   line-height: 1.4
   cursor: default
+
+
+
+.project-card-button
+    margin-top: variables.$m-1
+    display: inline-block
+    padding: .75rem 2.5rem
+    transition: all .3s
+    position: relative
+    overflow: hidden
+    z-index: 1
+    width: 100%
+    text-align: center
+    font-family: variables.$inclusive
+    background-color: variables.$red    
+    color: variables.$white
+    
+    &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: variables.$red
+        z-index: -2
+    &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 0%
+        height: 100%
+        background-color: darken(variables.$red, 15%)
+        transition: all .3s
+        z-index: -1
+    &:hover
+        &:before
+            width: 100%
+      
