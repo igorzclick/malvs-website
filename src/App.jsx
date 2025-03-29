@@ -8,12 +8,12 @@ import Project from './components/Projects/Project'
 const App = () => {
   return (
     <>
-    
-          <Header />
-          <Services />
-          <Project />
-          <Agency />
-    
+
+      <Header />
+      <Services />
+      <Project />
+      <Agency />
+
     </>
   )
 }

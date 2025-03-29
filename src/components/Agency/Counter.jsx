@@ -1,9 +1,9 @@
 // Counter.js
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 // eslint-disable-next-line react/prop-types
-const Counter = ({ label, targetValue, }) => {
+const Counter = ({ label, targetValue }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -26,30 +26,18 @@ const Counter = ({ label, targetValue, }) => {
     return () => clearInterval(interval);
   }, [targetValue]);
 
-  //   return (
-  //     <div className="counters">
-  //       <p className="count">{count}</p>
-  //       <p>+</p>
-  //       &nbsp;
-  //       <p className="label">{label}</p>
-  //     </div>
-  //   );
-  // };
-
   return (
-    <div className='counters'>
-      <div className='counter-container'>
+    <div className="counters">
+      <div className="counter-container">
         {/* Ícone */}
-        
+
         {/* Contador */}
-        <p className='counter-text'>+{count}</p>
+        <p className="counter-text">+{count}</p>
         {/* Label */}
-        <p className='label-counter'>{label}</p>
+        <p className="label-counter">{label}</p>
       </div>
     </div>
   );
 };
 
-
 export default Counter;
-
