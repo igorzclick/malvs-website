@@ -1,7 +1,7 @@
 const Scroll = () => {
   return (
     <div className="home-scroll">
-      <a href="#agency" className="home-scroll-button button-flex">
+      <a href="#services" className="home-scroll-button button-flex">
         <svg
           width="40px"
           height="40px"

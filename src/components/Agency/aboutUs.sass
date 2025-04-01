@@ -1,23 +1,17 @@
 @use '../../styles/variables'
 
 .cards-about
-  grid-template-columns: 6fr 6fr
-  gap: 0rem
+  grid-template-columns: 4fr 4fr 4fr
+  gap: 1rem
 
 .card-about
-  margin: 3rem auto
+  margin: 0rem auto
   background: #231e39
   color: variables.$white
   border-radius: 5px
-  width: 70%
+  width: 100%
   text-align: center
   box-shadow: 0 10px 20px -10px rgba(0,0,0,.75)
-
-.card-about:hover
-  box-shadow: 0 10px 20px -10px variables.$red
-  transform: translateY(-10px)
-  transition-duration: .5s
-  cursor: pointer
 
 .cover-photo
   background: url('../../assets/bg-gradiente.png')
@@ -27,8 +21,8 @@
   border-radius: 5px 5px 0 0
 
 .profile
-  height: 15rem
-  width: 15rem
+  height: 10rem
+  width: 10rem
   border-radius: 50%
   margin: 3rem
   border: 1px solid variables.$red
@@ -53,17 +47,34 @@
   margin: 1rem
   line-height: 21px
 
-.card i
+.card-about i
   font-size: 2rem
   margin-bottom: 2rem
   cursor: pointer
-  transition: .5s
+  transition: .5s ease-in-out
 
 .card-about i:hover
   color: variables.$red
 
-.bx bxl-linkedin-square
-  color: #0077b5
+.about-title
+  color: variables.$red
+  text-align: left
+  margin-top: 7rem
+
+.about-subtitle
+  text-align: left
+  font-weight: 300
+  color: variables.$white
+  font-family: variables.$inclusive
+  font-size: variables.$subtitle
+
+.about-description
+  padding: 1rem 0
+  text-align: left
+  font-weight: 300
+  color: variables.$white
+  font-family: variables.$inclusive
+  font-size: variables.$subtitle
 
 // mobile
 @media screen and (max-width: 767px)

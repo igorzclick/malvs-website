@@ -20,13 +20,12 @@ const Services = () => {
             <img src={cardImg1} alt="profile" />
           </div>
           <div className="card-results-title">
-            <span className="card-title-results">Sites Responsivos</span>
+            <span className="card-title-results">Resultados Rápidos</span>
           </div>
           <div className="card-results-description">
             <p className="card-description">
-              Desenvolvimento do seu site de forma 100% adaptável para todas as
-              e seguindo as regras do Google para uma melhor otimização e
-              desempenho.
+              Estratégias que geram resultados rápidos e mensuráveis para o seu
+              negócio. Aumente suas vendas e alcance novos clientes com nosso apoio.
             </p>
           </div>
         </div>
@@ -36,13 +35,12 @@ const Services = () => {
             <img className="icon-services" src={cardImg2} alt="profile" />
           </div>
           <div className="card-results-title">
-            <span className="card-title-results">Apoio Tecnológico</span>
+            <span className="card-title-results">Soluções Personalizadas</span>
           </div>
           <div className="card-results-description">
             <p className="card-description">
-              Desenvolvimento do seu site de forma 100% adaptável para todas as
-              e seguindo as regras do Google para uma melhor otimização e
-              desempenho.
+              Profissionais qualificados para atender suas necessidades específicas. Atuando
+              em todas as áreas do marketing digital e desenvolvimento.
             </p>
           </div>
         </div>
@@ -52,13 +50,12 @@ const Services = () => {
             <img className="icon-services" src={cardImg3} alt="profile" />
           </div>
           <div className="card-results-title">
-            <span className="card-title-results">Chatbots</span>
+            <span className="card-title-results">Soluções Responsivas</span>
           </div>
           <div className="card-results-description">
             <p className="card-description">
-              Desenvolvimento do seu site de forma 100% adaptável para todas as
-              e seguindo as regras do Google para uma melhor otimização e
-              desempenho.
+              Projetos otimizados para todos os dispositivos, garantindo uma experiência de usuário
+              excepcional. Aumente a satisfação do cliente e reduza a taxa de rejeição com nosso suporte.
             </p>
           </div>
         </div>
@@ -68,13 +65,12 @@ const Services = () => {
             <img className="icon-services" src={cardImg4} alt="profile" />
           </div>
           <div className="card-results-title">
-            <span className="card-title-results">Branding</span>
+            <span className="card-title-results">Suporte Contínuo</span>
           </div>
           <div className="card-results-description">
             <p className="card-description">
-              Desenvolvimento do seu site de forma 100% adaptável para todas as
-              e seguindo as regras do Google para uma melhor otimização e
-              desempenho.
+             Acompanhamento constante e suporte para garantir o sucesso do em todas as etapas do projeto, 
+             mesmo após a entrega. Nossa equipe está sempre disponível para ajudar.
             </p>
           </div>
         </div>
