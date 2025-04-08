@@ -37,15 +37,17 @@ const Header = () => {
       <nav>
         <Navigation />
       </nav>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 100 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate="visible"
-      >
-        <div className="banner">
+
+      <div className="banner">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 100 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
           <div className="banner-container container">
             <div className="banner-texts">
               <div className=" animate-blink">
@@ -76,8 +78,8 @@ const Header = () => {
 
             <Scroll />
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </header>
   );
 };

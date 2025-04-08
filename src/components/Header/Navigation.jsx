@@ -70,10 +70,10 @@ function Header() {
             <li className="nav-item">
               <a
                 aria-label="agencia"
-                href="#agency"
-                onClick={() => setActiveNav("#agency")}
+                href="#results"
+                onClick={() => setActiveNav("#results")}
                 className={
-                  activeNav === "#agency" ? "nav-link active-link" : "nav-link"
+                  activeNav === "#results" ? "nav-link active-link" : "nav-link"
                 }
               >
                 <i className="bx bx-code nav-icon"></i> Agência
