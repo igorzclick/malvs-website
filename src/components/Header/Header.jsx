@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./header.sass";
 import Navigation from "./Navigation";
 import Scroll from "./Scroll";
+import { motion } from "framer-motion";
 
 const Header = () => {
   // animação de escrita
@@ -36,38 +37,47 @@ const Header = () => {
       <nav>
         <Navigation />
       </nav>
-      <div className="banner">
-        <div className="banner-container container">
-          <div className="banner-texts">
-            <div className=" animate-blink">
-              <h2 className="cta">
-                <span>TRANSFORMANDO IDEIAS EM </span>
-                <span className="animation-text">{text}</span>
-              </h2>
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+      >
+        <div className="banner">
+          <div className="banner-container container">
+            <div className="banner-texts">
+              <div className=" animate-blink">
+                <h2 className="cta">
+                  <span>TRANSFORMANDO IDEIAS EM </span>
+                  <span className="animation-text">{text}</span>
+                </h2>
+              </div>
+              <p className="banner-subtitle">
+                Descubra estratégias inovadoras que transformam sua presença
+                online. Fale conosco e agende sua consultoria gratuita para
+                alavancar o crescimento da sua marca no mundo digital!
+              </p>
             </div>
-            <p className="banner-subtitle">
-              Descubra estratégias inovadoras que transformam sua presença
-              online. Fale conosco e agende sua consultoria gratuita para
-              alavancar o crescimento da sua marca no mundo digital!
-            </p>
-          </div>
-          <div className="button-header">
-            <a
-              aria-label="chat whatsapp"
-              href="https://wa.me/5511"
-              className="button-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              VENHA PARA O DIGITAL!
-            </a>
-          </div>
+            <div className="button-header">
+              <a
+                aria-label="chat whatsapp"
+                href="https://wa.me/5511"
+                className="button-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                VENHA PARA O DIGITAL!
+              </a>
+            </div>
 
-          <div className="home-img"></div>
+            <div className="home-img"></div>
 
-          <Scroll />
+            <Scroll />
+          </div>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
 };
