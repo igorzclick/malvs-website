@@ -57,9 +57,12 @@ const Header = () => {
                 </h2>
               </div>
               <p className="banner-subtitle">
-                Descubra estratégias inovadoras que transformam sua presença
-                online. Fale conosco e agende sua consultoria gratuita para
-                alavancar o crescimento da sua marca no mundo digital!
+                <b>Conheça</b> estratégias, <b>ideias inovadoras</b> e
+                personalizadas <b>que colocam sua marca em destaque</b> e
+                aumentam sua presença online.
+                <br />
+                <b>Vamos conversar?</b> Agende agora um <b>bate-papo</b> e
+                descubra como impulsionar sua marca no digital!
               </p>
             </div>
             <div className="button-header">
@@ -70,7 +73,7 @@ const Header = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                VENHA PARA O DIGITAL!
+                AGENDAR UM BATE-PAPO!
               </a>
             </div>
 

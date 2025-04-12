@@ -1,14 +1,12 @@
 import "./results.sass";
-import cardImg1 from "../../assets/raio.png";
-import cardImg2 from "../../assets/personalizacao.png";
-import cardImg3 from "../../assets/resolucao.png";
-import cardImg4 from "../../assets/suporte.png";
+import cardImg1 from "../../assets/metas.png";
+import cardImg2 from "../../assets/detalhes.png";
+import cardImg3 from "../../assets/parceria.png";
+import cardImg4 from "../../assets/grafico.png";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-
 const Services = () => {
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -32,9 +30,10 @@ const Services = () => {
     >
       <section ref={ref} className="results-container container" id="results">
         <div className="section-title-position">
-          <h2 className="section-title">POR QUE NOS ESCOLHER?</h2>
+          <h2 className="section-title">POR QUE ESCOLHER NOSSA AGÊNCIA?</h2>
           <p className="section-subtitle">
-            CONHEÇA MAIS SOBRE OS SERVIÇOS DE NOSSA AGÊNCIA
+            MAIS DO QUE SERVIÇOS, ENTREGAMOS VALOR, ESTRATÉGIAS E RESULTADOS
+            CONSISTENTES PARA MARCAS QUE BUSCAM SE DESTACAR.
           </p>
         </div>
         <div className="cards-results grid">
@@ -44,13 +43,14 @@ const Services = () => {
               <img src={cardImg1} alt="profile" />
             </div>
             <div className="card-results-title">
-              <span className="card-title-results">Resultados Rápidos</span>
+              <span className="card-title-results">
+                Estratégia com Propósito
+              </span>
             </div>
             <div className="card-results-description">
               <p className="card-description">
-                Estratégias que geram resultados rápidos e mensuráveis para o
-                seu negócio. Aumente suas vendas e alcance novos clientes com
-                nosso apoio.
+                Cada projeto nasce de um plano inteligente e sob medida, porque
+                sua marca merece mais do que soluções genéricas.
               </p>
             </div>
           </div>
@@ -61,14 +61,13 @@ const Services = () => {
             </div>
             <div className="card-results-title">
               <span className="card-title-results">
-                Soluções Personalizadas
+                Excelência em Cada Detalhe
               </span>
             </div>
             <div className="card-results-description">
               <p className="card-description">
-                Profissionais qualificados para atender suas necessidades
-                específicas. Atuando em todas as áreas do marketing digital e
-                desenvolvimento.
+                Da estética ao desempenho, cuidamos de cada elemento com rigor e
+                sofisticação para refletir o padrão da sua marca.
               </p>
             </div>
           </div>
@@ -78,13 +77,12 @@ const Services = () => {
               <img className="icon-services" src={cardImg3} alt="profile" />
             </div>
             <div className="card-results-title">
-              <span className="card-title-results">Soluções Responsivas</span>
+              <span className="card-title-results">Parceria de Verdade</span>
             </div>
             <div className="card-results-description">
               <p className="card-description">
-                Projetos otimizados para todos os dispositivos, garantindo uma
-                experiência de usuário excepcional. Aumente a satisfação do
-                cliente e reduza a taxa de rejeição com nosso suporte.
+                Trabalhamos lado a lado com você, com transparência, agilidade e
+                foco em resultados. Seu sucesso é o nosso compromisso.
               </p>
             </div>
           </div>
@@ -94,13 +92,14 @@ const Services = () => {
               <img className="icon-services" src={cardImg4} alt="profile" />
             </div>
             <div className="card-results-title">
-              <span className="card-title-results">Suporte Contínuo</span>
+              <span className="card-title-results">
+                Inovação que Gera Resultados
+              </span>
             </div>
             <div className="card-results-description">
               <p className="card-description">
-                Acompanhamento constante e suporte para garantir o sucesso do em
-                todas as etapas do projeto, mesmo após a entrega. Nossa equipe
-                está sempre disponível para ajudar.
+                Aplicamos as melhores tecnologias e tendências para entregar
+                soluções que não apenas impressionam, mas convertem.
               </p>
             </div>
           </div>

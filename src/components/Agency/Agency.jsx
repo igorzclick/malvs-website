@@ -49,7 +49,10 @@ const Agency = () => {
       <section ref={ref} className="agency-container container" id="agency">
         <div className="agency-texts">
           <h2 className="section-title agency-spacing">NOSSA AGÊNCIA</h2>
-          <p className="section-subtitle">DESCUBRA MAIS SOBRE NOSSA HISTÓRIA</p>
+          <p className="section-subtitle">
+            UMA AGÊNCIA DIGITAL QUE UNE CRIATIVIDADE, TECNOLOGIA E VISÃO DE
+            NEGÓCIO PARA CONSTRUIR MARCAS RELEVANTES E DURADOURAS.
+          </p>
         </div>
         {/* cards */}
         <div className="agency-cards grid">

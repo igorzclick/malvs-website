@@ -30,9 +30,10 @@ const Services = () => {
     >
       <section ref={ref} className="services-container container" id="services">
         <div className="section-title-position">
-          <h2 className="section-title">NOSSOS SERVIÇOS</h2>
+          <h2 className="section-title">SERVIÇOS OFERECIDOS</h2>
           <p className="section-subtitle">
-            CONHEÇA MAIS SOBRE OS SERVIÇOS DE NOSSA AGÊNCIA
+            TECNOLOGIA, CRIATIVIDADE E ESTRATÉGIA TRABALHANDO JUNTAS PARA
+            ATRAIR, ENGAJAR E CONVERTER.
           </p>
         </div>
         <div className="cards-services grid">
@@ -46,9 +47,9 @@ const Services = () => {
             </div>
             <div className="card-services-description">
               <p className="card-description">
-                Desenvolvimento do seu site de forma 100% adaptável para todas
-                as e seguindo as regras do Google para uma melhor otimização e
-                desempenho.
+                Projetamos sites elegantes, intuitivos e 100% responsivos, com
+                performance impecável em qualquer dispositivo, cada detalhe
+                pensado para impressionar e converter.
               </p>
             </div>
           </div>
@@ -62,9 +63,8 @@ const Services = () => {
             </div>
             <div className="card-services-description">
               <p className="card-description">
-                Desenvolvimento do seu site de forma 100% adaptável para todas
-                as e seguindo as regras do Google para uma melhor otimização e
-                desempenho.
+                Automatize, otimize e simplifique seus processos com soluções
+                tecnológicas sob medida para o seu negócio.
               </p>
             </div>
           </div>
@@ -78,9 +78,9 @@ const Services = () => {
             </div>
             <div className="card-services-description">
               <p className="card-description">
-                Desenvolvimento do seu site de forma 100% adaptável para todas
-                as e seguindo as regras do Google para uma melhor otimização e
-                desempenho.
+                Implantamos assistentes virtuais com alto nível de
+                personalização, prontos para oferecer atendimento ágil,
+                humanizado e eficiente, dia e noite.
               </p>
             </div>
           </div>
@@ -94,9 +94,9 @@ const Services = () => {
             </div>
             <div className="card-services-description">
               <p className="card-description">
-                Desenvolvimento do seu site de forma 100% adaptável para todas
-                as e seguindo as regras do Google para uma melhor otimização e
-                desempenho.
+                Construímos identidades visuais com propósito. Do conceito ao
+                posicionamento, traduzimos a essência da sua marca em uma
+                presença marcante e sofisticada.
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Services = () => {
             target="_blank"
             rel="noreferrer"
           >
-            CONHEÇA NOSSOS SERVIÇOS!
+            VENHA PARA O DIGITAL!
           </a>
         </div>
       </section>

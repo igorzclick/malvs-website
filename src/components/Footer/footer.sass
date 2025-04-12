@@ -1,0 +1,77 @@
+@use '../../styles/variables'
+
+#footer
+    color: #fff
+    font-family: variables.$inter
+    background-color: #000
+    height: 100%
+
+    p
+        font-weight: 200
+
+.columns
+    display: grid
+    grid-template-columns: repeat(3, 4fr)
+    grid-gap: 3rem
+
+.column
+    width: 100%
+    padding: 3rem
+
+.logo-footer img
+    margin-left: 2.5rem
+    padding: 0.2rem
+    width: 70%
+
+.logo p
+    font-size: 0.8rem
+    padding: 1rem 0
+
+.services-footer p
+    padding: 0.2rem 0
+
+.services-footer h3
+    margin-bottom: 0.5rem
+    color: variables.$red
+
+.social-media
+    display: flex
+
+.social-media  a
+    padding: 0 0.5rem
+    font-size: 1.5rem
+    color: #fff
+
+.social-media i:hover
+    transition: .4s ease
+    color: variables.$red
+
+
+.copy
+    text-align: center
+    padding: 0.5rem
+
+/*responsive*/
+@media screen and (max-width: 992px)
+    .columns
+        column-gap: 3rem
+
+@media screen and (max-width: 768px)
+    .columns
+        text-align: center
+        grid-template-columns: 1fr
+        row-gap: 1rem
+
+    .logo img
+        margin-left: 0rem
+        padding: 0.5rem
+        width: 50%
+
+    .pay ul
+        margin: 0 20%
+
+    .social-media
+        margin: 0 35%
+
+    .card-briefs
+        margin-top: 3rem

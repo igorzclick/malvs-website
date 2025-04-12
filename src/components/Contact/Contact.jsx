@@ -43,10 +43,9 @@ const Contact = () => {
       animate={mainControls}
       transition={{ duration: 0.5, delay: 0.25 }}
     >
-      <section ref={ref} className="contact section" id="contact">
+      <section ref={ref} className="contact-container" id="contact">
         <h2 className="section-title">CONTATO</h2>
         <p className="section-subtitle">ENTRE EM CONTATO CONOSCO!</p>
-
         <div className="contact-container container grid">
           <div className="contact-content">
             <h3 className="contact-title">Entre em Contato</h3>

@@ -26,9 +26,20 @@
     font-size: variables.$card-text
     color: variables.$white
     text-transform: uppercase
-    font-family: variables.$inclusive
+    font-family: variables.$inter
 
 .card-description
     font-family: variables.$inclusive
     font-size: variables.$small
     padding: 1rem 0
+
+@media screen and (max-width: 767px)
+    .cards-results
+        margin-top: variables.$m-0-5
+        grid-template-columns: 1fr
+
+    .card-title-results
+        margin: .5rem 0
+
+    .card-description
+        font-size: variables.$small

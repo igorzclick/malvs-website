@@ -29,14 +29,12 @@
     font-size: variables.$card-text
     color: variables.$white
     text-transform: uppercase
-    font-family: variables.$inclusive
+    font-family: variables.$inter
 
 .card-description
     font-family: variables.$inclusive
     font: variables.$subtitle
     padding: 1rem 0
-    
-
 
 // button
 .button-services
@@ -79,3 +77,13 @@
     letter-spacing: .15rem
     font-weight: variables.$font-weight-normal
     color: variables.$white
+
+@media screen and (max-width: 767px)
+    .cards-services
+        grid-template-columns: 1fr
+        gap: 1rem
+
+    .button-services
+        width: 93%
+        left: .9rem
+        padding: .75rem 2.5rem
