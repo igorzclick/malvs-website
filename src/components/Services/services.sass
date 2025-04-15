@@ -1,0 +1,89 @@
+@use '../../styles/variables'
+
+.services-container
+    align-items: center
+    justify-content: center
+    padding: variables.$m-2 0
+    height: 100%
+
+.cards-services
+    grid-template-columns: 3fr 3fr 3fr 3fr
+    gap: 1rem
+
+.services-img
+    width: 100%
+    margin: variables.$m-1 auto
+
+.services-img img
+    width: 25%
+
+.card-services
+    margin: variables.$m-2 auto
+    color: variables.$white
+    width: 100%
+    padding: 1.3rem
+    text-align: center
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75)
+
+.card-title
+    font-size: variables.$card-text
+    color: variables.$white
+    text-transform: uppercase
+    font-family: variables.$inter
+
+.card-description
+    font-family: variables.$inclusive
+    font: variables.$subtitle
+    padding: 1rem 0
+
+// button
+.button-services
+    display: inline-block
+    padding: .75rem 2.5rem
+    transition: all .3s
+    position: relative
+    overflow: hidden
+    z-index: 1
+    width: 40%
+    text-align: center
+    font-family: variables.$inclusive
+    left: 28.9%
+
+    &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: variables.$red
+        z-index: -2
+    &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 0%
+        height: 100%
+        background-color: darken(variables.$red, 15%)
+        transition: all .3s
+        z-index: -1
+    &:hover
+        &:before
+            width: 100%
+
+.button-link
+    font-size: variables.$text-font
+    letter-spacing: .15rem
+    font-weight: variables.$font-weight-normal
+    color: variables.$white
+
+@media screen and (max-width: 767px)
+    .cards-services
+        grid-template-columns: 1fr
+        gap: 1rem
+
+    .button-services
+        width: 93%
+        left: .9rem
+        padding: .75rem 2.5rem

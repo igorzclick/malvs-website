@@ -1,0 +1,45 @@
+@use '../../styles/variables'
+
+.results-container
+    padding: variables.$m-2 0 variables.$m-1 0
+
+.cards-results
+    grid-template-columns: 3fr 3fr 3fr 3fr
+    gap: 1rem
+
+.results-img
+    width: 100%
+    margin: variables.$m-1 auto
+
+.results-img img
+    width: 18%
+
+.card-results
+    margin: variables.$m-2 auto
+    color: variables.$white
+    width: 100%
+    padding: 0.5rem
+    text-align: center
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset
+
+.card-title-results
+    font-size: variables.$card-text
+    color: variables.$white
+    text-transform: uppercase
+    font-family: variables.$inter
+
+.card-description
+    font-family: variables.$inclusive
+    font-size: variables.$small
+    padding: 1rem 0
+
+@media screen and (max-width: 767px)
+    .cards-results
+        margin-top: variables.$m-0-5
+        grid-template-columns: 1fr
+
+    .card-title-results
+        margin: .5rem 0
+
+    .card-description
+        font-size: variables.$small

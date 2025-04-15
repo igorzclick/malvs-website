@@ -1,0 +1,165 @@
+@use '../../styles/variables'
+
+.contact-container
+    grid-template-columns: repeat(2, max-content)
+    justify-content: center
+    column-gap: 6rem
+    padding-bottom: 3rem
+
+.contact-title
+    text-align: center
+    font-size: variables.$text-font
+    font-weight: variables.$font-weight-normal
+    color: variables.$red
+    margin-bottom: variables.$m-1-5
+
+.contact-info
+    display: grid
+    row-gap: 1rem
+    grid-template-columns: 300px
+
+.contact-form
+    width: 300px
+
+.contact-card
+    background-color: #231e39
+    border: 1px solid variables.$red
+    padding: 1rem
+    text-align: center
+
+.contact-icon
+    font-size: 1.7rem
+    color: variables.$red
+    margin-bottom: variables.$m-0-25
+
+.contact-card-title
+    font-weight: variables.$font-weight-normal
+    color: variables.$white
+
+.contact-card-data
+    font-size: .9rem
+    display: block
+    margin: variables.$m-0-5
+    color: variables.$white
+    font-weight: variables.$font-weight-normal
+
+.contact-button
+    color: variables.$red
+    font-size: variables.$small
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    column-gap: .25rem
+
+.contact-button-icon
+    font-size: 1rem
+    transition: .4s
+
+.contact-button:hover
+.contact-button-icon
+    transform: translateX(00.25rem)
+    color: variables.$red
+
+.contact-form
+    width: 360px
+
+.contact-form-div
+    position: relative
+    margin-bottom: variables.$m-2
+    height: 4rem
+    color: variables.$white
+
+.contact-form-input
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 2px solid variables.$red
+    background: none
+    color: variables.$white
+    outline: none
+    padding: 1.5rem
+    z-index: 1
+
+.contact-form-tag
+    position: absolute
+    top: -.90rem
+    left: 1.25rem
+    padding: .25rem
+    background-color: variables.$black
+    z-index: 10
+
+.contact-form-area
+    height: 11rem
+
+.contact-form-area textarea
+    resize: none
+
+.button-contact
+    margin-top: variables.$m-1
+    display: inline-block
+    padding: .75rem 2.5rem
+    transition: all .3s
+    position: relative
+    overflow: hidden
+    z-index: 1
+    width: 100%
+    text-align: center
+    font-family: variables.$inclusive
+    margin-top: -.1rem
+
+    a
+        color: variables.$white
+        font-size: variables.$small
+        font-weight: variables.$font-weight-normal
+        text-decoration: none
+
+    &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: variables.$red
+        z-index: -2
+    &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 0%
+        height: 100%
+        background-color: darken(variables.$red, 15%)
+        transition: all .3s
+        z-index: -1
+    &:hover
+        &:before
+            width: 100%
+
+/*responsive*/
+
+@media screen and (max-width: 992px)
+    .contact-container
+        column-gap: 3rem
+
+@media screen and (max-width: 768px)
+    .contact-container
+        grid-template-columns: 1fr
+        row-gap: 3rem
+
+    .contact-info
+        justify-content: center
+
+    .contact-form
+        margin: 0 auto
+
+@media screen and (max-width: 576px)
+    .contact-info
+        grid-template-columns: 1fr
+
+    .contact-form
+        width: 100%
+
+@media screen and (max-width: 350px)
