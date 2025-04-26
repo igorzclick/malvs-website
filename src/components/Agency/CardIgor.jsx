@@ -1,5 +1,5 @@
 import "./aboutUs.sass";
-import profile1 from "../../assets/alberto.png";
+import profile1 from "../../assets/igor-profile.png";
 
 const CardIgor = () => {
   return (
@@ -8,7 +8,7 @@ const CardIgor = () => {
         <img className="profile" src={profile1} alt="profile" />
       </div>
       <div className="profile-name">Igor Rozendo</div>
-      <div className="position">CO-CEO</div>
+      <div className="position">CO-FOUNDER</div>
       <p className="about">
         Gestor de Tráfego | Desenvolvedor |<br />
         Product Manager

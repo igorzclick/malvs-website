@@ -45,7 +45,7 @@ const Contact = () => {
     >
       <section ref={ref} className="contact-container" id="contact">
         <h2 className="section-title">CONTATO</h2>
-        <p className="section-subtitle">ENTRE EM CONTATO CONOSCO!</p>
+        <p className="section-subtitle">ALGUMA DÚVIDA? ENTRE EM CONTATO CONOSCO!</p>
         <div className="contact-container container grid">
           <div className="contact-content">
             <h3 className="contact-title">Entre em Contato</h3>
@@ -57,10 +57,10 @@ const Contact = () => {
 
                 <h3 className="contact-card-title">Email</h3>
                 <span className="contact-card-data">
-                  albertosouza16.contato@gmail.com
+                  malvsagenciadigital@gmail.com
                 </span>
                 <a
-                  href="mailto:albertosouza16.contato@gmail"
+                  href="mailto:malvsagenciadigital@gmail.com"
                   rel="noreferrer"
                   target="_blank"
                   className="contact-button"
@@ -91,10 +91,10 @@ const Contact = () => {
 
                 <h3 className="contact-card-title">LinkedIn</h3>
                 <span className="contact-card-data">
-                  www.linkedin.com/in/albertoasouza
+                  Malv's Agência Digital
                 </span>
                 <a
-                  href="https://www.linkedin.com/in/alberto-souza-b4a1451b5/"
+                  href="https://www.linkedin.com/company/malvs-ag%C3%AAncia-digital/about"
                   rel="noreferrer"
                   target="_blank"
                   className="contact-button"

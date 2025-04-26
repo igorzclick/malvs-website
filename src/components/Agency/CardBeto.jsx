@@ -1,5 +1,5 @@
 import "./aboutUs.sass";
-import profile1 from "../../assets/alberto.png";
+import profile1 from "../../assets/alberto-profile.png";
 
 const CardBeto = () => {
   return (
@@ -8,7 +8,7 @@ const CardBeto = () => {
         <img className="profile" src={profile1} alt="profile" />
       </div>
       <div className="profile-name">Alberto Souza</div>
-      <div className="position">CEO</div>
+      <div className="position">CEO | FOUNDER</div>
       <p className="about">
         Designer | Desenvolvedor |<br />
         Product Owner

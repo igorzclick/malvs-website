@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./navigation.sass";
-import Logo from "../../assets/malvs-logo-branca-1.png";
+import LogoHeader from "../../assets/malvs-logo-branca-1.png";
 
 function Header() {
   /*header color change*/
@@ -17,9 +17,9 @@ function Header() {
   return (
     <div className="header">
       <nav className="nav container">
-        <h1 className="logo" aria-label="Malvs Agência Digital">
+        <h1 className="logo-header" aria-label="Malvs Agência Digital">
           <a href="index.html" className="nav-logo">
-            <img className="logo-nav" src={Logo} alt="Logo Malvs" />
+            <img className="logo-nav" src={LogoHeader} alt="Logo Malvs" />
           </a>
         </h1>
 

@@ -1,5 +1,5 @@
 import "./footer.sass";
-import Logo from "../../assets/malvs-logo-branca-1.png";
+import LogoFooter from "../../assets/malvs-logo-branca-1.png";
 
 const Footer = () => {
   return (
@@ -7,23 +7,31 @@ const Footer = () => {
       <div className="container">
         <div className="columns">
           <div className="logo-footer column">
-            <img className="logo-footer" src={Logo} alt="logo providentia 2" />
+            <img
+              className="logo-footer"
+              src={LogoFooter}
+              alt="logo providentia 2"
+            />
             <p>
-              Oferecemos soluções personalizadas e de alta qualidade para
-              proteger sua propriedade intelectual.
+              Somos uma empresa focada em lapidar a presença digital de
+              pequenas, médias ou grandes empresas, com estratégias e soluções
+              personalizadas que combinam criatividade, dados e tecnologia.
             </p>
           </div>
           <div className="services-footer column">
             <h3>Serviços</h3>
             <ul>
               <li>
-                <p>Registro de marcas</p>
+                <p>Desenvolvimento de sites</p>
               </li>
               <li>
                 <p>Criação de identidade visual</p>
               </li>
               <li>
-                <p>Propriedade Intelectual</p>
+                <p>Estratégias de marketing</p>
+              </li>
+              <li>
+                <p>Apoio tecnológico</p>
               </li>
             </ul>
           </div>
@@ -31,7 +39,7 @@ const Footer = () => {
             <ul className="social-media">
               <li>
                 <a
-                  href="https://www.linkedin.com/company/providentia-consultoria/"
+                  href="https://www.linkedin.com/company/malvs-ag%C3%AAncia-digital/about/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -40,7 +48,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/providentiaconsultoria/"
+                  href="https://www.instagram.com/malvsdigital/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -48,11 +56,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.instagram.com/providentiaconsultoria/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="/" target="_blank" rel="noreferrer">
                   <i className="bx bxl-tiktok"></i>
                 </a>
               </li>
