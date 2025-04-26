@@ -1,4 +1,5 @@
-// import emailjs from "@emailjs/browser";
+
+import emailjs from "@emailjs/browser";
 import "./contact.sass";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -12,14 +13,21 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_srrrvdu",
-      "template_jddxgyw",
-      form.current,
-      "K5dO50g6Xjx8V0LmF"
-    );
-    e.target.reset();
+    emailjs
+      .sendForm("service_hupuskz", "template_dyxqmba", form.current, {
+        publicKey: "leXjDlMzOyteL7TuA",
+      })
+      e.target.reset()
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
+
 
   // animation scroll
   const ref = useRef(null);
@@ -45,7 +53,9 @@ const Contact = () => {
     >
       <section ref={ref} className="contact-container" id="contact">
         <h2 className="section-title">CONTATO</h2>
-        <p className="section-subtitle">ALGUMA DÚVIDA? ENTRE EM CONTATO CONOSCO!</p>
+        <p className="section-subtitle">
+          ALGUMA DÚVIDA? ENTRE EM CONTATO CONOSCO!
+        </p>
         <div className="contact-container container grid">
           <div className="contact-content">
             <h3 className="contact-title">Entre em Contato</h3>
@@ -76,7 +86,7 @@ const Contact = () => {
                 <h3 className="contact-card-title">WhatsApp</h3>
                 <span className="contact-card-data">+55 11 91603-3154</span>
                 <a
-                  href="https://wa.me/5511916033154"
+                  href="https://wa.me/5511916033154?text=Oi%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Malv's%20Ag%C3%AAncia%20Digital."
                   rel="noreferrer"
                   target="_blank"
                   className="contact-button"
@@ -141,17 +151,13 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div className="button-contact">
-                <a
-                  aria-label="chat whatsapp"
-                  href="https://wa.me/5511"
-                  className="button-link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ENVIAR MENSSAGEM
-                </a>
-              </div>
+              <button
+                className="button-contact"
+                value="Send"
+                onClick={() => alert("Mensagem enviada!")}
+              >
+                <p>Enviar Mensagem</p>
+              </button>
             </form>
           </div>
         </div>

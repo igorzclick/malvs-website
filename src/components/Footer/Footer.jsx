@@ -56,7 +56,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.tiktok.com/@malvsagencia?_t=ZM-8vroTD1rYYv&_r=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="bx bxl-tiktok"></i>
                 </a>
               </li>
