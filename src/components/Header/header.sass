@@ -1,12 +1,16 @@
 @use '../../styles/variables'
 
+// no view mobile
+.img-mobile
+    display: none
+
+// animação escrita
 .banner
     color: variables.$white
     height: 100vh
     background: linear-gradient(-30deg, variables.$red, variables.$black, variables.$we-pink)
     background-size: 400% 400%
     animation: gradient 12s ease infinite
-    ovel
 
 @keyframes gradient
     0%
@@ -39,7 +43,7 @@
 .banner-container
     position: relative
 
-.button
+.button-header
     margin-top: variables.$m-1
     display: inline-block
     padding: .75rem 2.5rem
@@ -82,20 +86,31 @@
 
 /*image*/
 .home-img
-    background: url(../../assets/image-header2-sf.png)
+    background: url(../../assets/image-banner.png)
     background-repeat: no-repeat
     background-position: center
-    background-size: contain
+    background-size: cover
     justify-content: center
-    width: 50%
+    width: 70%
     height: 100%
     position: absolute
-    left: 50%
+    left: 40%
     top: 25%
+    animation: move 3s infinite alternate ease-in-out
+
+.home-img img
+    animation: glow 1.5s infinite alternate ease-in-out
+
+    @keyframes move
+        0%
+            transform: translateY(0) rotate(0deg)
+
+        100%
+            transform: translateY(-10px) rotate(2deg)
 
 /*scroll animation*/
 .home-scroll
-    margin: 8% 50%
+    margin: 22% 47.5%
     position: absolute
 
 .wheel
@@ -112,3 +127,57 @@
 .home-scroll-arrow
     font-size: 1.25rem
     color: variables.$red
+
+// responsive settings
+
+// notebooks and small screens
+@media screen and (min-width: 1080px) and (max-width: 1366px)
+    .home-img
+        width: 50%
+        left: 50%
+        top: 25%
+
+    .home-scroll
+        margin: 6% 47.5%
+
+// mobile
+@media screen and (max-width: 767px)
+    .header-banner
+        height: 100vh
+        width: 100%
+
+    .banner-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100vh
+        padding: 1rem
+
+    .banner-texts
+        width: 100%
+        padding-top: 1vh
+        text-align: center
+
+    .cta
+        font-size: 2rem
+        width: 100%
+
+    .banner-subtitle
+        width: 100%
+        margin-top: 1rem
+        font-size: 1.4rem
+
+    .button-header
+        width: 100%
+        margin-top: 1.5rem
+
+    .button-link
+        font-size: 1.1rem !important 
+
+    .home-img
+        display: none
+
+    .home-scroll
+        display: none
+        position: none

@@ -1,70 +1,90 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from "react";
-import './header.sass';
-import Navigation from './Navigation';
+import React, { useState, useEffect, useRef } from "react";
+import "./header.sass";
+import Navigation from "./Navigation";
 import Scroll from "./Scroll";
+import { motion } from "framer-motion";
 
 const Header = () => {
+  // animação de escrita
+  const words = ["LEADS.", "INOVAÇÃO.", "REALIDADE."];
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
 
-    const words = ["IDENTIDADE.", "INOVAÇÃO.", "INFLUÊNCIA.", "AUTORIDADE.", "RELEVÂNCIA."];
-    const [index, setIndex] = useState(0);
-    const [text, setText] = useState("");
-    const [isDeleting, setIsDeleting] = useState(false);
-
-    useEffect(() => {
-        let timeout;
-        if (!isDeleting && text.length < words[index].length) {
-            timeout = setTimeout(() => {
-                setText(words[index].substring(0, text.length + 1));
-            }, 200);
-        } else if (isDeleting && text.length > 0) {
-            timeout = setTimeout(() => {
-                setText(words[index].substring(0, text.length - 1));
-            }, 100);
-        } else if (!isDeleting && text.length === words[index].length) {
-            timeout = setTimeout(() => setIsDeleting(true), 1000);
-        } else if (isDeleting && text.length === 0) {
-            setIsDeleting(false);
-            setIndex((prevIndex) => (prevIndex + 1) % words.length);
-        }
-        return () => clearTimeout(timeout);
-    }, [text, isDeleting, index, words]);
+  useEffect(() => {
+    let timeout;
+    if (!isDeleting && text.length < words[index].length) {
+      timeout = setTimeout(() => {
+        setText(words[index].substring(0, text.length + 1));
+      }, 200);
+    } else if (isDeleting && text.length > 0) {
+      timeout = setTimeout(() => {
+        setText(words[index].substring(0, text.length - 1));
+      }, 100);
+    } else if (!isDeleting && text.length === words[index].length) {
+      timeout = setTimeout(() => setIsDeleting(true), 1000);
+    } else if (isDeleting && text.length === 0) {
+      setIsDeleting(false);
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, index, words]);
 
   return (
-    <header className='header-banner'>
-        <nav>
-            <Navigation />
-        </nav>
-        <div className="banner" id='home'>
-            <div className="banner-container container">
-                <div className="banner-texts">
-                     <div className=" animate-blink">
-                        <h2 className="cta" >
-                            <span>SOMOS RESPONSÁVEIS PELA SUA </span> 
-                            <span className="animation-text">
-                                {text}
-                            </span> 
-                        </h2>
-                    </div>
-                    <p className='banner-subtitle'>
-                        Descubra estratégias inovadoras que transformam sua presença online. 
-                        Fale conosco e agende sua consultoria gratuita para alavancar o crescimento da sua marca no mundo digital!
-                    </p>
-                </div>
-                <div className="button">
-                    <a aria-label="chat whatsapp" href="https://wa.me/5511" className="button-link" target='_blank' rel='noreferrer'>
-                            VENHA PARA O DIGITAL!  
-                    </a>
-                </div>
-                
-                <div className="home-img"></div>
+    <header className="header-banner" id="header">
+      <nav>
+        <Navigation />
+      </nav>
 
-                <Scroll/>
+      <div className="banner">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 100 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
+          <div className="banner-container container">
+            <div className="banner-texts">
+              <div className=" animate-blink">
+                <h2 className="cta">
+                  <span>TRANSFORMANDO IDEIAS EM </span>
+                  <span className="animation-text">{text}</span>
+                </h2>
+              </div>
+              <p className="banner-subtitle">
+                <b>Conheça</b> estratégias, <b>ideias inovadoras</b> e
+                personalizadas <b>que colocam sua marca em destaque</b> e
+                aumentam sua presença online.
+                <br />
+                <b>Vamos conversar?</b> Agende agora um <b>bate-papo</b> e
+                descubra como impulsionar sua marca no digital!
+              </p>
             </div>
-        </div>
-    </header>
-  )
-}
+            <div className="button-header">
+              <a
+                aria-label="chat whatsapp"
+                href="https://wa.me/5511999067335?text=Oi%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Malv's%20Ag%C3%AAncia%20Digital."
+                className="button-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                AGENDAR UM BATE-PAPO!
+              </a>
+            </div>
 
-export default Header
+            <div className="home-img"></div>
+
+            <Scroll />
+          </div>
+        </motion.div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

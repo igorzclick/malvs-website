@@ -1,0 +1,88 @@
+@use '../../styles/variables'
+
+.cards-about
+  grid-template-columns: 4fr 4fr 4fr
+  gap: 1rem
+
+.card-about
+  margin: 0rem auto
+  background: #231e39
+  color: variables.$white
+  border-radius: 5px
+  width: 100%
+  text-align: center
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75)
+
+.cover-photo
+  background: url('../../assets/bg-gradiente.png')
+  width: 100%
+  background-repeat: no-repeat
+  background-size: cover
+  border-radius: 5px 5px 0 0
+
+.profile
+  height: 10rem
+  width: 10rem
+  border-radius: 50%
+  margin: 3rem
+  border: 3px solid variables.$gray
+
+  padding: 0
+  background: variables.$red
+
+.position
+  font-family: variables.$inclusive
+  font-size: variables.$card-text
+  font-weight: 300
+  color: variables.$red
+  margin: -1rem
+  margin-bottom: 1rem
+
+.profile-name
+  font-family: variables.$inclusive
+  font-size: variables.$text-font
+  font-weight: bold
+  margin: 1rem
+
+.about
+  margin: 1rem
+  line-height: 21px
+
+.card-about i
+  font-size: 2rem
+  margin-bottom: 2rem
+  cursor: pointer
+  transition: .5s ease-in-out
+
+.card-about i:hover
+  color: variables.$red
+
+.about-title
+  color: variables.$red
+  text-align: left
+  margin-top: 7rem
+
+.about-subtitle
+  text-align: left
+  font-weight: 300
+  color: variables.$white
+  font-family: variables.$inclusive
+  font-size: variables.$subtitle
+
+.about-description
+  padding: 1rem 0
+  text-align: left
+  font-weight: 300
+  color: variables.$white
+  font-family: variables.$inclusive
+  font-size: variables.$subtitle
+
+// mobile
+@media screen and (max-width: 767px)
+  .cards-about
+    grid-template-columns: 1fr
+    gap: 0rem
+
+  .card-about
+    margin: 1rem auto
+    width: 100%
